@@ -1,0 +1,41 @@
+{
+  "name": "@vortos/permissions",
+  "version": "1.0.1",
+  "description": "React permissions provider, hooks, and components for Vortos applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "prebuild": "node -e \"require('fs').mkdirSync('dist',{recursive:true})\"",
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react",
+    "predev": "node -e \"require('fs').mkdirSync('dist',{recursive:true})\"",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --external react --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vortos/react-permissions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vortos/react-permissions/issues"
+  },
+  "homepage": "https://github.com/vortos/react-permissions#readme",
+  "keywords": [
+    "vortos",
+    "react",
+    "permissions",
+    "authorization",
+    "rbac"
+  ],
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT"
+}
