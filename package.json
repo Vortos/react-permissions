@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vortos/react-permissions.git"
+    "url": "git+https://github.com/Vortos/react-permissions.git"
   },
   "bugs": {
-    "url": "https://github.com/vortos/react-permissions/issues"
+    "url": "https://github.com/Vortos/react-permissions/issues"
   },
-  "homepage": "https://github.com/vortos/react-permissions#readme",
+  "homepage": "https://github.com/Vortos/react-permissions#readme",
   "keywords": [
     "vortos",
     "react",
